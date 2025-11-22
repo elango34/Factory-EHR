@@ -43,6 +43,9 @@ public class BadAppointmentService {
         } else if ("telehealth".equalsIgnoreCase(type)) {
             System.out.println("Creating zoom link");
             System.out.println("Sending email invite");
+        } else if ("ivr-patient".equalsIgnoreCase(type)) {
+            System.out.println("Creating zoom link");
+            System.out.println("Sending email invite");
         } else {
             throw new IllegalArgumentException("unknown type");
         }
